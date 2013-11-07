@@ -1,0 +1,53 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: LobsterHacker, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\Documents and Settings\mazanekw\My Documents\12th Grade\LobsterHacker\Debug\RSP000006.rsp" with contents
+[
+/Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FD /EHsc /RTC1 /MLd /YX"stdafx.h" /Fp".\Debug/LobsterHacker.pch" /Fo".\Debug/" /Fd".\Debug/" /W3 /c /ZI /TP
+".\lobsterman.cpp"
+]
+Creating command line "cl.exe @"c:\Documents and Settings\mazanekw\My Documents\12th Grade\LobsterHacker\Debug\RSP000006.rsp" /nologo"
+Creating temporary file "c:\Documents and Settings\mazanekw\My Documents\12th Grade\LobsterHacker\Debug\RSP000007.rsp" with contents
+[
+/OUT:".\Debug/LobsterHacker.exe" /INCREMENTAL:NO /NOLOGO /DEBUG /PDB:".\Debug/LobsterHacker.pdb" /SUBSYSTEM:CONSOLE /MACHINE:X86  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib
+".\CMUgraphics.lib"
+".\Debug\lobsterman.obj"
+".\Debug\randgen.obj"
+]
+Creating command line "link.exe @"c:\Documents and Settings\mazanekw\My Documents\12th Grade\LobsterHacker\Debug\RSP000007.rsp""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+lobsterman.cpp
+Linking...
+LINK : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+libcpd.lib(locale0.obj) : error LNK2005: "public: __thiscall std::locale::locale(void)" (??0locale@std@@QAE@XZ) already defined in CMUgraphics.lib(errorlib.obj)
+LINK : warning LNK4098: defaultlib 'LIBC' conflicts with use of other libs; use /NODEFAULTLIB:library
+CMUgraphics.lib(window.obj) : error LNK2019: unresolved external symbol "void __cdecl std::_Xlen(void)" (?_Xlen@std@@YAXXZ) referenced in function "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::assign(char const *,unsigned int)" (?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z)
+CMUgraphics.lib(image.obj) : error LNK2001: unresolved external symbol "void __cdecl std::_Xlen(void)" (?_Xlen@std@@YAXXZ)
+CMUgraphics.lib(errorlib.obj) : error LNK2001: unresolved external symbol "void __cdecl std::_Xlen(void)" (?_Xlen@std@@YAXXZ)
+CMUgraphics.lib(image.obj) : error LNK2019: unresolved external symbol "void __cdecl std::_Xran(void)" (?_Xran@std@@YAXXZ) referenced in function "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::assign(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,unsigned int,unsigned int)" (?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z)
+CMUgraphics.lib(errorlib.obj) : error LNK2019: unresolved external symbol "void __cdecl std::_Xran(void)" (?_Xran@std@@YAXXZ) referenced in function _$E316
+CMUgraphics.lib(errorlib.obj) : error LNK2019: unresolved external symbol "struct _iobuf * __cdecl std::__Fiopen(char const *,int)" (?__Fiopen@std@@YAPAU_iobuf@@PBDH@Z) referenced in function "private: static void __cdecl error::OpenLog(void)" (?OpenLog@error@@CAXXZ)
+CMUgraphics.lib(errorlib.obj) : error LNK2019: unresolved external symbol "private: static class std::locale::_Locimp * std::locale::_Locimp::_Global" (?_Global@_Locimp@locale@std@@0PAV123@A) referenced in function "public: __thiscall std::basic_fstream<char,struct std::char_traits<char> >::basic_fstream<char,struct std::char_traits<char> >(void)" (??0?$basic_fstream@DU?$char_traits@D@std@@@std@@QAE@XZ)
+CMUgraphics.lib(errorlib.obj) : error LNK2019: unresolved external symbol "__int64 const std::_Fpz" (?_Fpz@std@@3_JB) referenced in function "protected: virtual class std::fpos<int> __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::seekoff(long,enum std::ios_base::seekdir,int)" (?seekoff@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE?AV?$fpos@H@2@JW4seekdir@ios_base@2@H@Z)
+CMUgraphics.lib(errorlib.obj) : error LNK2019: unresolved external symbol "protected: void __thiscall std::ios_base::_Addstd(void)" (?_Addstd@ios_base@std@@IAEXXZ) referenced in function "public: __thiscall std::basic_ostream<char,struct std::char_traits<char> >::basic_ostream<char,struct std::char_traits<char> >(class std::basic_streambuf<char,struct std::char_traits<char> > *,bool,bool)" (??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N1@Z)
+CMUgraphics.lib(errorlib.obj) : error LNK2019: unresolved external symbol "public: bool __thiscall std::locale::_Iscloc(void)const " (?_Iscloc@locale@std@@QBE_NXZ) referenced in function "protected: void __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::_Initcvt(void)" (?_Initcvt@?$basic_filebuf@DU?$char_traits@D@std@@@std@@IAEXXZ)
+CMUgraphics.lib(errorlib.obj) : error LNK2019: unresolved external symbol "public: class std::locale::facet const * __thiscall std::locale::_Getfacet(unsigned int,bool)const " (?_Getfacet@locale@std@@QBEPBVfacet@12@I_N@Z) referenced in function "protected: void __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::_Initcvt(void)" (?_Initcvt@?$basic_filebuf@DU?$char_traits@D@std@@@std@@IAEXXZ)
+.\Debug/LobsterHacker.exe : fatal error LNK1120: 8 unresolved externals
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\Documents and Settings\mazanekw\My Documents\12th Grade\LobsterHacker\Debug\BuildLog.htm"
+LobsterHacker - 13 error(s), 2 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>
